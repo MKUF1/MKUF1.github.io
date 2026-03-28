@@ -1,0 +1,17 @@
+<svg width="760" height="820" viewBox="0 0 760 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="820" rx="42" fill="#FFF7F8"/>
+  <rect x="58" y="58" width="644" height="704" rx="36" fill="url(#paint0_linear)"/>
+  <circle cx="380" cy="276" r="128" fill="#FEEDED"/>
+  <path d="M252 640C252 550.634 324.634 478 414 478H346C435.366 478 508 550.634 508 640V664H252V640Z" fill="#FEEDED"/>
+  <path d="M332 278C332 239.34 363.34 208 402 208C440.66 208 472 239.34 472 278V304C472 342.66 440.66 374 402 374C363.34 374 332 342.66 332 304V278Z" fill="#FEA3B6"/>
+  <rect x="132" y="85" width="232" height="42" rx="21" fill="white" fill-opacity="0.28"/>
+  <text x="146" y="113" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="700">Muhammed Bin Omar</text>
+  <text x="132" y="706" fill="white" font-family="Arial, sans-serif" font-size="38" font-weight="700">Riyadh, Saudi Arabia</text>
+  <text x="132" y="748" fill="#FEEDED" font-family="Arial, sans-serif" font-size="22">Remote Website Builder</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="96" y1="96" x2="642" y2="736" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#481F72"/>
+      <stop offset="1" stop-color="#FEA3B6"/>
+    </linearGradient>
+  </defs>
+</svg>

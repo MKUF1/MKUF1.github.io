@@ -1,0 +1,19 @@
+<svg width="980" height="720" viewBox="0 0 980 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="980" height="720" rx="42" fill="#FFF7F8"/>
+  <rect x="48" y="56" width="175" height="284" rx="28" fill="#481F72"/>
+  <rect x="239" y="56" width="175" height="284" rx="28" fill="#FEA3B6"/>
+  <rect x="430" y="56" width="175" height="284" rx="28" fill="#FEEDED"/>
+  <rect x="621" y="56" width="175" height="284" rx="28" fill="#2A123F"/>
+  <rect x="812" y="56" width="120" height="284" rx="28" fill="#FFF"/>
+  <rect x="48" y="376" width="282" height="284" rx="28" fill="#FFF"/>
+  <rect x="348" y="376" width="282" height="284" rx="28" fill="#FEEDED"/>
+  <rect x="648" y="376" width="284" height="284" rx="28" fill="#481F72"/>
+  <text x="73" y="310" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="700">Futuristic</text>
+  <text x="267" y="310" fill="#481F72" font-family="Arial, sans-serif" font-size="24" font-weight="700">Luxury</text>
+  <text x="461" y="310" fill="#481F72" font-family="Arial, sans-serif" font-size="24" font-weight="700">Classic</text>
+  <text x="661" y="310" fill="white" font-family="Arial, sans-serif" font-size="24" font-weight="700">Vintage</text>
+  <text x="835" y="310" fill="#481F72" font-family="Arial, sans-serif" font-size="20" font-weight="700">Store</text>
+  <text x="77" y="628" fill="#481F72" font-family="Arial, sans-serif" font-size="30" font-weight="700">Editorial Brand</text>
+  <text x="385" y="628" fill="#481F72" font-family="Arial, sans-serif" font-size="30" font-weight="700">Classroom LMS</text>
+  <text x="723" y="628" fill="white" font-family="Arial, sans-serif" font-size="30" font-weight="700">Corporate</text>
+</svg>
