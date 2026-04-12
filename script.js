@@ -1,4 +1,4 @@
-const reveals = document.querySelectorAll(".reveal");
+const revealItems = document.querySelectorAll(".reveal");
 
 const revealObserver = new IntersectionObserver(
   entries => {
@@ -9,50 +9,10 @@ const revealObserver = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.16 }
+  { threshold: 0.14 }
 );
 
-reveals.forEach(item => revealObserver.observe(item));
-
-const counters = document.querySelectorAll(".counter");
-
-const animateCounter = counter => {
-  const target = Number(counter.dataset.target || 0);
-  let current = 0;
-  const step = Math.max(1, Math.ceil(target / 45));
-
-  const tick = () => {
-    current += step;
-    if (current >= target) {
-      counter.textContent = `${target}+`;
-      return;
-    }
-    counter.textContent = `${current}+`;
-    requestAnimationFrame(tick);
-  };
-
-  tick();
-};
-
-const counterObserver = new IntersectionObserver(
-  entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        animateCounter(entry.target);
-        counterObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.55 }
-);
-
-counters.forEach(counter => counterObserver.observe(counter));
-
-document.querySelectorAll(".faq-question").forEach(button => {
-  button.addEventListener("click", () => {
-    button.parentElement.classList.toggle("is-open");
-  });
-});
+revealItems.forEach(item => revealObserver.observe(item));
 
 const siteHeader = document.querySelector(".site-header");
 const navToggle = document.querySelector(".nav-toggle");
@@ -72,69 +32,95 @@ if (siteHeader && navToggle) {
   });
 }
 
+const mouseGlowAreas = document.querySelectorAll("[data-mouse-glow]");
+
+mouseGlowAreas.forEach(area => {
+  area.addEventListener("pointermove", event => {
+    const rect = area.getBoundingClientRect();
+    const x = ((event.clientX - rect.left) / rect.width) * 100;
+    const y = ((event.clientY - rect.top) / rect.height) * 100;
+
+    area.style.setProperty("--mx", `${x}%`);
+    area.style.setProperty("--my", `${y}%`);
+  });
+
+  area.addEventListener("pointerleave", () => {
+    area.style.setProperty("--mx", "50%");
+    area.style.setProperty("--my", "40%");
+  });
+});
+
+const parallaxItems = document.querySelectorAll("[data-parallax]");
+
+parallaxItems.forEach(item => {
+  item.addEventListener("pointermove", event => {
+    if (window.innerWidth <= 720) return;
+
+    const rect = item.getBoundingClientRect();
+    const x = (event.clientX - rect.left) / rect.width;
+    const y = (event.clientY - rect.top) / rect.height;
+    const rotateY = (x - 0.5) * 8;
+    const rotateX = (0.5 - y) * 8;
+
+    item.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+  });
+
+  item.addEventListener("pointerleave", () => {
+    item.style.transform = "";
+  });
+});
+
 const contactForm = document.querySelector("[data-contact-form]");
 
 if (contactForm) {
   const feedback = contactForm.querySelector("[data-form-feedback]");
   const submitButton = contactForm.querySelector(".contact-submit");
   const isArabic = document.documentElement.lang === "ar";
+  const recipient = "m.core.official.webdevelopment@gmail.com";
 
   contactForm.addEventListener("submit", event => {
     event.preventDefault();
+    if (!submitButton || !feedback) return;
+
     submitButton.classList.add("is-sending");
-    feedback.textContent = isArabic ? "جاري إرسال رسالتك..." : "Sending your message...";
+    feedback.textContent = isArabic ? "جاري تجهيز الرسالة..." : "Preparing your message...";
+
+    const formData = new FormData(contactForm);
+    const name = String(formData.get("name") || "");
+    const email = String(formData.get("email") || "");
+    const project = String(formData.get("project") || "");
+    const message = String(formData.get("message") || "");
+
+    const subject = isArabic ? `استفسار موقع - ${project}` : `Website Inquiry - ${project}`;
+    const body = isArabic
+      ? [
+          "مرحبًا M Core،",
+          "",
+          `الاسم: ${name}`,
+          `البريد الإلكتروني: ${email}`,
+          `نوع المشروع: ${project}`,
+          "",
+          "الرسالة:",
+          message
+        ].join("\n")
+      : [
+          "Hello M Core,",
+          "",
+          `Full Name: ${name}`,
+          `Email Address: ${email}`,
+          `Project Type: ${project}`,
+          "",
+          "Message:",
+          message
+        ].join("\n");
+
+    window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
     window.setTimeout(() => {
       submitButton.classList.remove("is-sending");
       feedback.textContent = isArabic
-        ? "تم إرسال الرسالة بنجاح. سنعود إليك قريبًا."
-        : "Message sent. We will get back to you soon.";
-      contactForm.reset();
-    }, 1400);
-  });
-}
-
-const aboutGlowSection = document.querySelector("[data-pointer-glow]");
-
-if (aboutGlowSection) {
-  const glow = aboutGlowSection.querySelector(".about-hero-glow");
-
-  aboutGlowSection.addEventListener("pointermove", event => {
-    const bounds = aboutGlowSection.getBoundingClientRect();
-    const x = ((event.clientX - bounds.left) / bounds.width) * 100;
-    const y = ((event.clientY - bounds.top) / bounds.height) * 100;
-
-    glow?.style.setProperty("--x", `${x}%`);
-    glow?.style.setProperty("--y", `${y}%`);
-  });
-}
-
-const homeHero = document.querySelector(".hero-home");
-const heroGlow = document.querySelector(".hero-pointer-glow");
-const heroVisual = document.querySelector(".hero-visual");
-
-if (homeHero && heroGlow) {
-  homeHero.addEventListener("pointermove", event => {
-    const bounds = homeHero.getBoundingClientRect();
-    const x = ((event.clientX - bounds.left) / bounds.width) * 100;
-    const y = ((event.clientY - bounds.top) / bounds.height) * 100;
-
-    heroGlow.style.setProperty("--x", `${x}%`);
-    heroGlow.style.setProperty("--y", `${y}%`);
-
-    if (heroVisual && window.innerWidth > 720) {
-      const rotateY = ((x - 50) / 50) * 4;
-      const rotateX = ((50 - y) / 50) * 4;
-      heroVisual.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-    }
-  });
-
-  homeHero.addEventListener("pointerleave", () => {
-    heroGlow.style.setProperty("--x", "50%");
-    heroGlow.style.setProperty("--y", "50%");
-
-    if (heroVisual) {
-      heroVisual.style.transform = "";
-    }
+        ? "تم تجهيز الرسالة في تطبيق البريد."
+        : "Your message has been prepared in your email app.";
+    }, 450);
   });
 }

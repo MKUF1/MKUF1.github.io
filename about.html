@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | M Core</title>
-  <meta name="description" content="Learn about Muhammed Bin Omar, a Riyadh-based remote website builder serving global clients with trust, design quality, and ongoing support.">
+  <title>About | M Core</title>
+  <meta name="description" content="Learn about M Core and the premium, precision-first studio approach behind each project.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
@@ -25,98 +28,73 @@
       </button>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a class="active" href="about.html">About Us</a>
+        <a href="portfolio.html">Clients</a>
+        <a class="active" href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
         <div class="menu-mobile-actions">
-          <a class="lang-switch lang-en" href="about-ar.html" aria-label="Switch to Arabic">
-            <span>EN</span>
-            <span>AR</span>
-          </a>
+          <a class="lang-switch-button" href="about-ar.html" aria-label="Switch to Arabic"><span>AR</span></a>
           <a class="button button-small menu-cta" href="contact.html">Start Your Project</a>
         </div>
       </nav>
-      <a class="lang-switch lang-en" href="about-ar.html" aria-label="Switch to Arabic">
-        <span>EN</span>
-        <span>AR</span>
-      </a>
-      <a class="button button-small" href="contact.html">Start Your Project</a>
+      <div class="nav-actions">
+        <a class="lang-switch-button" href="about-ar.html" aria-label="Switch to Arabic"><span>AR</span></a>
+        <a class="button button-small" href="contact.html">Start Your Project</a>
+      </div>
     </div>
   </header>
 
   <main class="inner-page">
-    <section class="about-hero" data-pointer-glow>
-      <div class="about-hero-glow" aria-hidden="true"></div>
-      <div class="container about-hero-inner">
-        <p class="eyebrow reveal">About Muhammed Bin Omar</p>
-        <h1 class="reveal reveal-delay-1">Web building from Riyadh, delivered remotely to clients worldwide</h1>
-        <p class="lead reveal reveal-delay-2">I build attractive websites for businesses and individuals who want a strong online image, a smooth customer journey, and dependable remote support from Saudi Arabia to the world.</p>
+    <section class="section page-hero page-hero-split">
+      <div class="container page-hero-layout">
+        <div class="page-hero-copy reveal">
+          <p class="eyebrow">About M Core</p>
+          <h1>Built around precision, motion,<br>and stronger digital presence.</h1>
+          <p class="lead">At M.CORE, we believe a website is more than just code—it’s the foundation of your digital identity. Based in Riyadh, we bridge the gap between complex web engineering and high-end visual design.</p>
+        </div>
+        <div class="page-hero-media page-hero-media-float reveal reveal-delay-1" data-parallax>
+          <div class="page-hero-glow"></div>
+          <img src="assets/about-us.jpg" alt="Muhammed Bin Omar portrait">
+        </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container profile-panel reveal">
-        <div class="profile-visual">
-          <img src="assets/muhammed-photo.jpg" alt="Illustrated portrait card for Muhammed Bin Omar">
+      <div class="container story-layout">
+        <div class="story-copy reveal">
+          <p class="eyebrow">Studio Direction</p>
+          <h2>Less clutter. Better rhythm.<br>More value on screen.</h2>
+          <p>The studio approach keeps every layout cleaner, every section sharper, and every brand more memorable online.</p>
         </div>
-        <div class="profile-copy">
-          <p class="eyebrow">My Details</p>
-          <h2>Muhammed Bin Omar, remote website builder based in Riyadh</h2>
-          <p>I help companies, startups, and personal brands create websites that look polished and feel credible from the first second. My work blends design, structure, branding, and clear communication so clients feel confident throughout the full remote process.</p>
-          <p>Whether you want a futuristic company website, a classic brand presence, a refined vintage look, a classroom LMS, or a bold modern store, I design with the audience and business goal in mind.</p>
-          <div class="profile-facts">
-            <div class="profile-fact">
-              <span>Location</span>
-              <strong>Riyadh, Saudi Arabia</strong>
-            </div>
-            <div class="profile-fact">
-              <span>Specialty</span>
-              <strong>Business websites, LMS, stores, portfolios</strong>
-            </div>
-            <div class="profile-fact">
-              <span>Approach</span>
-              <strong>Remote-first, trust-focused, design-led</strong>
-            </div>
-          </div>
+        <div class="story-notes reveal reveal-delay-1">
+          <article><span>Base</span><strong>Riyadh, Saudi Arabia</strong></article>
+          <article><span>Style</span><strong>Sleek, modern, premium</strong></article>
+          <article><span>Mode</span><strong>Remote and global</strong></article>
         </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-heading reveal">
+        <p class="eyebrow">Mission & Vision</p>
+        <h2>The direction behind<br>every project we build.</h2>
+      </div>
+      <div class="container feature-grid">
+        <article class="feature-card reveal"><h3>Our Mission</h3><p>To build premium digital experiences that help brands look sharper, feel more valuable, and convert with more confidence.</p></article>
+        <article class="feature-card reveal reveal-delay-1"><h3>Our Vision</h3><p>To become a trusted studio for businesses that want elegant web systems, global polish, and long-term digital presence.</p></article>
+        <article class="feature-card reveal reveal-delay-2"><h3>Our Promise</h3><p>Every project stays focused on clean structure, refined motion, and a stronger first impression across every screen.</p></article>
       </div>
     </section>
 
     <section class="section section-soft">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Why Choose Us</p>
-          <h2>More reasons clients feel confident working with us</h2>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card reveal">
-            <h3>24/7 Remote Help Mindset</h3>
-            <p>Clients value knowing they can reach out for updates, refinements, and continued support while the project stays organized and easy to follow.</p>
-          </article>
-          <article class="feature-card reveal reveal-delay-1">
-            <h3>Many Website Styles</h3>
-            <p>We can build futuristic, luxury, classic, modern, editorial, minimal, or vintage-inspired websites depending on your audience and brand direction.</p>
-          </article>
-          <article class="feature-card reveal reveal-delay-2">
-            <h3>Built for Trust</h3>
-            <p>Every section is planned to make your visitors feel safe, impressed, and ready to contact you for real work opportunities.</p>
-          </article>
-        </div>
+      <div class="container section-heading reveal">
+        <p class="eyebrow">Principles</p>
+        <h2>What keeps the work<br>feeling premium.</h2>
       </div>
-    </section>
-
-    <section class="section">
-      <div class="container split-layout">
-        <div class="split-copy reveal">
-          <p class="eyebrow">Design Range</p>
-          <h2>From futuristic websites to classic and industry-specific experiences</h2>
-          <p>Different industries need different visual moods. We can create bold technology-inspired designs, elegant corporate presentations, refined vintage aesthetics, online stores, and classroom LMS systems that feel intuitive and attractive.</p>
-          <p>That flexibility helps us match the right look to your business while keeping performance, clarity, and customer trust at the center of the work.</p>
-        </div>
-        <div class="split-visual reveal reveal-delay-1">
-          <img src="assets/genre-showcase.svg" alt="Showcase of multiple website style genres">
-        </div>
+      <div class="container feature-grid">
+        <article class="feature-card reveal"><h3>Sharper hierarchy</h3><p>Clearer spacing and stronger placement improve how every brand is perceived.</p></article>
+        <article class="feature-card reveal reveal-delay-1"><h3>Reduced noise</h3><p>Shorter copy and calmer sections keep the focus on value instead of clutter.</p></article>
+        <article class="feature-card reveal reveal-delay-2"><h3>Responsive detail</h3><p>Desktop and mobile both receive the same level of polish and refinement.</p></article>
       </div>
     </section>
   </main>
@@ -124,25 +102,22 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand brand-footer" href="index.html">
-          <img src="assets/logo-m.svg" alt="M Core logo">
-          <span>M Core</span>
-        </a>
-        <p>Remote website building from Riyadh for companies and personal brands worldwide.</p>
+        <a class="brand brand-footer" href="index.html"><img src="assets/logo-m.svg" alt="M Core logo"><span>M Core</span></a>
+        <p>Premium websites built remotely from Riyadh for serious brands worldwide.</p>
       </div>
       <div>
         <h3>Pages</h3>
         <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About Us</a>
+        <a href="portfolio.html">Clients</a>
+        <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
       </div>
       <div>
         <h3>Highlights</h3>
-        <a href="about.html">Global Remote Work</a>
-        <a href="about.html">Many Design Genres</a>
-        <a href="about.html">Trust &amp; Support</a>
+        <a href="portfolio.html">Client sectors</a>
+        <a href="portfolio.html">Industries We Work For</a>
+        <a href="services.html">Process</a>
       </div>
       <div>
         <h3>Contact</h3>
@@ -151,9 +126,7 @@
         <p>Riyadh, Saudi Arabia</p>
       </div>
     </div>
-    <div class="container footer-bottom">
-      <p>&copy; 2026 M Core. Built for global clients.</p>
-    </div>
+    <div class="container footer-bottom"><p>&copy; 2026 M Core. All rights reserved.</p></div>
   </footer>
 </body>
 </html>

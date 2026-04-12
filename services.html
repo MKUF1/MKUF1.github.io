@@ -4,174 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services | M Core</title>
-  <meta name="description" content="Explore website building services including business websites, stores, classroom LMS builds, redesigns, landing pages, and long-term website support contracts.">
+  <meta name="description" content="Premium web design services by M Core for business websites, stores, learning platforms, and redesigns.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
 <body class="page-services">
   <header class="site-header">
     <div class="container nav-shell">
-      <a class="brand" href="index.html" aria-label="M Core home">
-        <img src="assets/logo-m.svg" alt="M Core logo">
-        <span>M Core</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu">
-        <span class="nav-toggle-lines" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-        <span class="nav-toggle-label">More</span>
-      </button>
+      <a class="brand" href="index.html" aria-label="M Core home"><img src="assets/logo-m.svg" alt="M Core logo"><span>M Core</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu"><span class="nav-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span><span class="nav-toggle-label">More</span></button>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About Us</a>
+        <a href="portfolio.html">Clients</a>
+        <a href="about.html">About</a>
         <a class="active" href="services.html">Services</a>
         <a href="contact.html">Contact</a>
         <div class="menu-mobile-actions">
-          <a class="lang-switch lang-en" href="services-ar.html" aria-label="Switch to Arabic">
-            <span>EN</span>
-            <span>AR</span>
-          </a>
+          <a class="lang-switch-button" href="services-ar.html" aria-label="Switch to Arabic"><span>AR</span></a>
           <a class="button button-small menu-cta" href="contact.html">Start Your Project</a>
         </div>
       </nav>
-      <a class="lang-switch lang-en" href="services-ar.html" aria-label="Switch to Arabic">
-        <span>EN</span>
-        <span>AR</span>
-      </a>
-      <a class="button button-small" href="contact.html">Start Your Project</a>
+      <div class="nav-actions">
+        <a class="lang-switch-button" href="services-ar.html" aria-label="Switch to Arabic"><span>AR</span></a>
+        <a class="button button-small" href="contact.html">Start Your Project</a>
+      </div>
     </div>
   </header>
 
   <main class="inner-page">
-    <section class="page-hero">
-      <div class="container page-hero-grid">
-        <div class="page-hero-copy">
-          <p class="eyebrow reveal">Services</p>
-          <h1 class="reveal reveal-delay-1">Website services designed to help your brand grow globally</h1>
-          <p class="lead reveal reveal-delay-2">From one-time builds to long-term support contracts, we offer flexible website solutions for businesses, stores, educational platforms, and personal brands.</p>
+    <section class="section page-hero page-hero-split">
+      <div class="container page-hero-layout">
+        <div class="page-hero-copy reveal">
+          <p class="eyebrow">Services</p>
+          <h1>Everything needed for a stronger<br>and cleaner digital system.</h1>
+          <p class="lead">Focused services for brands that want premium design, smoother motion, and sharper digital delivery.</p>
         </div>
-        <div class="page-hero-visual reveal reveal-delay-1">
-          <div class="hero-card hero-card-main">
-            <img src="assets/service-business.svg" alt="Website service showcase">
-          </div>
-          <div class="hero-card hero-card-floating">
-            <img src="assets/service-store.svg" alt="Store website preview">
-          </div>
+        <div class="page-hero-media page-hero-media-float reveal reveal-delay-1" data-parallax>
+          <div class="page-hero-glow"></div>
+          <img src="assets/services.jpg" alt="Service showcase">
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container service-grid">
-        <article class="service-card reveal">
-          <img src="assets/service-business.svg" alt="Business website service illustration">
-          <h2>Business Website Design</h2>
-          <p>Professional websites for companies that need trust, authority, clean structure, and a premium first impression.</p>
-          <a class="button button-secondary" href="contact.html">Let&apos;s Start Creating Your Website</a>
-        </article>
-        <article class="service-card reveal reveal-delay-1">
-          <img src="assets/service-store.svg" alt="Store website service illustration">
-          <h2>Store &amp; Product Websites</h2>
-          <p>Stylish online store experiences designed to present products clearly and guide visitors toward purchase or inquiry.</p>
-          <a class="button button-secondary" href="contact.html">Build My Store Website</a>
-        </article>
-        <article class="service-card reveal reveal-delay-2">
-          <img src="assets/service-lms.svg" alt="Classroom LMS service illustration">
-          <h2>Classroom LMS Platforms</h2>
-          <p>Learning websites and classroom systems for academies, courses, and training centers that want a polished digital experience.</p>
-          <a class="button button-secondary" href="contact.html">Create My LMS Platform</a>
-        </article>
-        <article class="service-card reveal">
-          <img src="assets/service-landing.svg" alt="Landing page service illustration">
-          <h2>Landing Pages &amp; Lead Funnels</h2>
-          <p>Focused pages for launches, campaigns, offers, or services that help convert attention into messages and new business.</p>
-          <a class="button button-secondary" href="contact.html">Launch My Landing Page</a>
-        </article>
-        <article class="service-card reveal reveal-delay-1">
-          <img src="assets/service-redesign.svg" alt="Website redesign service illustration">
-          <h2>Website Redesign &amp; Refresh</h2>
-          <p>Upgrade old, unclear, or outdated websites into modern digital spaces that reflect your current standards and ambition.</p>
-          <a class="button button-secondary" href="contact.html">Refresh My Website</a>
-        </article>
-        <article class="service-card reveal reveal-delay-2">
-          <img src="assets/service-support.svg" alt="Website support contract illustration">
-          <h2>Website Care &amp; Ongoing Support</h2>
-          <p>For clients who want improvements, updates, support, and steady website care after launch without managing everything alone.</p>
-          <a class="button button-secondary" href="contact.html">Ask About Support Plans</a>
-        </article>
+        <article class="service-card reveal"><h3>Business websites</h3><p>Stronger presentation for companies that need clarity, trust, and authority.</p></article>
+        <article class="service-card reveal reveal-delay-1"><h3>Store websites</h3><p>Cleaner product journeys that move visitors toward action faster.</p></article>
+        <article class="service-card reveal reveal-delay-2"><h3>Learning platforms</h3><p>Modern website systems for classes, academies, and LMS products.</p></article>
+        <article class="service-card reveal"><h3>Landing pages</h3><p>Compact pages built for launches, campaigns, and higher conversion.</p></article>
+        <article class="service-card reveal reveal-delay-1"><h3>Redesigns</h3><p>Transforming older websites into calmer and more premium systems.</p></article>
+        <article class="service-card reveal reveal-delay-2"><h3>Support</h3><p>Ongoing refinement, fixes, and performance upgrades after launch.</p></article>
       </div>
     </section>
 
     <section class="section section-soft">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Service Options</p>
-          <h2>Choose the model that fits your business best</h2>
-        </div>
-        <div class="pricing-grid">
-          <article class="pricing-card reveal">
-            <p class="eyebrow">Option 1</p>
-            <h3>One-Time Web Build</h3>
-            <p>We design and build your website, complete the agreed pages, review it with you, and hand it over ready for your business to use.</p>
-            <ul class="bullet-list">
-              <li>Best for businesses wanting ownership after delivery</li>
-              <li>Clear project scope and launch-focused process</li>
-              <li>Ideal for company websites, stores, and personal brands</li>
-            </ul>
-            <a class="button" href="contact.html">Start a One-Time Build</a>
-          </article>
-          <article class="pricing-card featured reveal reveal-delay-1">
-            <p class="eyebrow">Option 2</p>
-            <h3>Build + Yearly Contract</h3>
-            <p>We build the website for you and continue supporting, refining, and helping over time through a yearly contract paid in installments or in full.</p>
-            <ul class="bullet-list">
-              <li>Perfect for businesses wanting long-term remote support</li>
-              <li>Installment or full-payment flexibility</li>
-              <li>Special offer: take a 5-year contract and receive 2 years free, paying only for 3 years</li>
-            </ul>
-            <a class="button button-dark" href="contact.html">Ask About Contract Plans</a>
-          </article>
-        </div>
+      <div class="container section-heading reveal"><p class="eyebrow">Process</p><h2>A cleaner path from<br>first idea to launch.</h2></div>
+      <div class="container process-grid">
+        <article class="process-card reveal"><h3>01</h3><p>Direction, references, and page structure.</p></article>
+        <article class="process-card reveal reveal-delay-1"><h3>02</h3><p>Design, content shaping, and motion detailing.</p></article>
+        <article class="process-card reveal reveal-delay-2"><h3>03</h3><p>Responsive polish, testing, and launch support.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-heading reveal"><p class="eyebrow">Ways to work</p><h2>Choose the model that<br>fits your brand.</h2></div>
+      <div class="container offer-grid">
+        <article class="offer-card reveal"><h3>One-time build</h3><p>Design, build, review, and delivery.</p></article>
+        <article class="offer-card reveal reveal-delay-1"><h3>Build + support</h3><p>Launch first, then keep improving the website over time.</p></article>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div>
-        <a class="brand brand-footer" href="index.html">
-          <img src="assets/logo-m.svg" alt="M Core logo">
-          <span>M Core</span>
-        </a>
-        <p>Remote website building from Riyadh for companies and personal brands worldwide.</p>
-      </div>
-      <div>
-        <h3>Pages</h3>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div>
-        <h3>Service Types</h3>
-        <a href="services.html">Web Build</a>
-        <a href="services.html">Contract Support</a>
-        <a href="services.html">LMS</a>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <a href="tel:0556175626">0556175626</a>
-        <a href="mailto:m.core.official.webdevelopment@gmail.com">m.core.official.webdevelopment@gmail.com</a>
-        <p>Riyadh, Saudi Arabia</p>
-      </div>
+      <div><a class="brand brand-footer" href="index.html"><img src="assets/logo-m.svg" alt="M Core logo"><span>M Core</span></a><p>Premium websites built remotely from Riyadh for serious brands worldwide.</p></div>
+      <div><h3>Pages</h3><a href="index.html">Home</a><a href="portfolio.html">Clients</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
+      <div><h3>Highlights</h3><a href="portfolio.html">Our Clients</a><a href="portfolio.html">Industries We Work For</a><a href="services.html">Process</a></div>
+      <div><h3>Contact</h3><a href="tel:0556175626">0556175626</a><a href="mailto:m.core.official.webdevelopment@gmail.com">m.core.official.webdevelopment@gmail.com</a><p>Riyadh, Saudi Arabia</p></div>
     </div>
-    <div class="container footer-bottom">
-      <p>&copy; 2026 M Core. Built for global clients.</p>
-    </div>
+    <div class="container footer-bottom"><p>&copy; 2026 M Core. All rights reserved.</p></div>
   </footer>
 </body>
 </html>

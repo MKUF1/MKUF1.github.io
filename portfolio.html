@@ -3,176 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | M Core</title>
-  <meta name="description" content="Portfolio of remote website projects for construction, classroom LMS, and fit-out and signage production companies.">
+  <title>Clients | M Core</title>
+  <meta name="description" content="See M Core clients, completed project boxes, and the industries we build for.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
-<body class="page-portfolio">
+<body class="page-clients">
   <header class="site-header">
     <div class="container nav-shell">
-      <a class="brand" href="index.html" aria-label="M Core home">
-        <img src="assets/logo-m.svg" alt="M Core logo">
-        <span>M Core</span>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu">
-        <span class="nav-toggle-lines" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-        <span class="nav-toggle-label">More</span>
-      </button>
+      <a class="brand" href="index.html" aria-label="M Core home"><img src="assets/logo-m.svg" alt="M Core logo"><span>M Core</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Open menu"><span class="nav-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span><span class="nav-toggle-label">More</span></button>
       <nav class="site-nav" aria-label="Primary navigation">
         <a href="index.html">Home</a>
-        <a class="active" href="portfolio.html">Portfolio</a>
-        <a href="about.html">About Us</a>
+        <a class="active" href="portfolio.html">Clients</a>
+        <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
         <div class="menu-mobile-actions">
-          <a class="lang-switch lang-en" href="portfolio-ar.html" aria-label="Switch to Arabic">
-            <span>EN</span>
-            <span>AR</span>
-          </a>
+          <a class="lang-switch-button" href="portfolio-ar.html" aria-label="Switch to Arabic"><span>AR</span></a>
           <a class="button button-small menu-cta" href="contact.html">Start Your Project</a>
         </div>
       </nav>
-      <a class="lang-switch lang-en" href="portfolio-ar.html" aria-label="Switch to Arabic">
-        <span>EN</span>
-        <span>AR</span>
-      </a>
-      <a class="button button-small" href="contact.html">Start Your Project</a>
+      <div class="nav-actions">
+        <a class="lang-switch-button" href="portfolio-ar.html" aria-label="Switch to Arabic"><span>AR</span></a>
+        <a class="button button-small" href="contact.html">Start Your Project</a>
+      </div>
     </div>
   </header>
 
   <main class="inner-page">
-    <section class="page-hero">
-      <div class="container page-hero-grid">
-        <div class="page-hero-copy">
-          <p class="eyebrow reveal">Our Work</p>
-          <h1 class="reveal reveal-delay-1">Portfolio built to impress serious clients</h1>
-          <p class="lead reveal reveal-delay-2">These sample case studies show how we shape visuals, structure, and trust-building for different industries while keeping the experience modern and attractive.</p>
+    <section class="section page-hero page-hero-split">
+      <div class="container page-hero-layout">
+        <div class="page-hero-copy reveal">
+          <p class="eyebrow">Clients</p>
+          <h1>Trusted by brands that need<br>sharper digital presence.</h1>
+          <p class="lead">A cleaner clients page with showcase boxes first, then the industries you work with most.</p>
         </div>
-        <div class="page-hero-visual reveal reveal-delay-1">
-          <div class="hero-card hero-card-main">
-            <img src="assets/portfolio-construction.svg" alt="Portfolio showcase preview">
-          </div>
-          <div class="hero-card hero-card-floating">
-            <img src="assets/portfolio-lms.svg" alt="Classroom website preview">
-          </div>
+        <div class="page-hero-media page-hero-media-float reveal reveal-delay-1" data-parallax>
+          <div class="page-hero-glow"></div>
+          <img src="assets/clients.jpg" alt="Client and project showcase">
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container portfolio-stack">
-        <article class="portfolio-card reveal">
-          <div class="portfolio-image">
-            <img src="assets/portfolio-construction.svg" alt="Construction company website design concept">
-          </div>
-          <div class="portfolio-copy">
-            <p class="eyebrow">Construction Company Website</p>
-            <h2>Bold, reliable, corporate presentation for a construction brand</h2>
-            <p>This concept was designed for a construction company that needed to appear larger, more organized, and more trusted by investors, partners, and project owners. The layout uses strong typography, project imagery, service highlights, and credibility blocks to support lead generation.</p>
-            <ul class="bullet-list">
-              <li>Clear sections for projects, company capabilities, safety standards, and inquiry flow</li>
-              <li>Professional visuals to communicate scale and reliability</li>
-              <li>Perfect for contracting firms, engineering brands, and developers</li>
-            </ul>
+      <div class="container section-heading reveal">
+        <p class="eyebrow">Our Clients</p>
+        <h2>Client boxes ready for<br>image, name, and short story.</h2>
+      </div>
+      <div class="container project-grid">
+        <article class="project-card reveal">
+          <img src="assets/qzee.jpg" alt="Client showcase">
+          <div>
+            <h3>Qzee</h3>
+            <p>Fresh fruit joy in every colorful bottle.</p>
+            <a class="project-link" href="https://qzee.in" target="_blank" rel="noreferrer">Visit Website</a>
           </div>
         </article>
-
-        <article class="portfolio-card reverse reveal">
-          <div class="portfolio-image">
-            <img src="assets/portfolio-lms.svg" alt="Classroom LMS website design concept">
-          </div>
-          <div class="portfolio-copy">
-            <p class="eyebrow">Classroom LMS Platform</p>
-            <h2>Modern learning experience with clear student and teacher pathways</h2>
-            <p>This project concept focuses on a classroom LMS experience that feels intuitive, fresh, and trustworthy. It includes dashboard previews, course category blocks, teacher introduction areas, student action buttons, and a clean digital learning atmosphere.</p>
-            <ul class="bullet-list">
-              <li>Designed for online academies, training centers, and education startups</li>
-              <li>Balances usability with a polished branded look</li>
-              <li>Supports confidence for signups, learning journeys, and institutional credibility</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="portfolio-card reveal">
-          <div class="portfolio-image">
-            <img src="assets/portfolio-fitout.svg" alt="Fit-out and signage production company website design concept">
-          </div>
-          <div class="portfolio-copy">
-            <p class="eyebrow">Fit-Out &amp; Signage Production Company</p>
-            <h2>Stylish presentation for a creative fabrication and production business</h2>
-            <p>This concept is crafted for a fit-out and signage production company that needs to look premium, practical, and detail-oriented. It mixes luxury-inspired color treatment with clean structure to highlight materials, execution quality, previous work, and consultation requests.</p>
-            <ul class="bullet-list">
-              <li>Strong portfolio storytelling with services, process, and featured results</li>
-              <li>Designed to attract retail, hospitality, and corporate clients</li>
-              <li>Communicates quality, trust, and design intelligence at first glance</li>
-            </ul>
+        <article class="project-card reveal reveal-delay-1">
+          <img src="assets/portfolio-lms.svg" alt="Client showcase">
+          <div>
+            <h3>Client Two</h3>
+            <p>Use this second box for another client image, short note, and live website link.</p>
+            <a class="project-link" href="https://your-project-link.com" target="_blank" rel="noreferrer">Visit Website</a>
           </div>
         </article>
       </div>
     </section>
 
     <section class="section section-soft">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p class="eyebrow">What These Projects Show</p>
-          <h2>We adapt style and structure to the audience you want to win</h2>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card reveal">
-            <h3>Industry Fit</h3>
-            <p>Each website is tailored to the tone clients expect, whether that means corporate trust, educational clarity, or premium visual polish.</p>
-          </article>
-          <article class="feature-card reveal reveal-delay-1">
-            <h3>Conversion Focus</h3>
-            <p>We shape call-to-actions, page flow, proof sections, and contact points to help visitors become customers.</p>
-          </article>
-          <article class="feature-card reveal reveal-delay-2">
-            <h3>Memorable Design</h3>
-            <p>Clean animation, strong composition, and distinct visual direction help your website stand out instead of blending in.</p>
-          </article>
-        </div>
+      <div class="container section-heading reveal">
+        <p class="eyebrow">Industries We Work For</p>
+        <h2>Focused sectors where<br>strong presentation matters fast.</h2>
+      </div>
+      <div class="container client-grid">
+        <article class="client-card reveal"><h3>Food &amp; Beverages</h3><p>Brands that need appetite, quality, and trust at first glance.</p></article>
+        <article class="client-card reveal reveal-delay-1"><h3>Signage &amp; Events</h3><p>Studios and event teams that sell through visuals, impact, and energy.</p></article>
+        <article class="client-card reveal"><h3>Construction &amp; Building</h3><p>Corporate presentation for firms that need authority and credibility.</p></article>
+        <article class="client-card reveal reveal-delay-1"><h3>Fitness</h3><p>Sharper digital presence for gyms, coaches, and wellness brands.</p></article>
+        <article class="client-card reveal"><h3>Education &amp; LMS</h3><p>Modern structures for academies, training platforms, and online learning.</p></article>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div>
-        <a class="brand brand-footer" href="index.html">
-          <img src="assets/logo-m.svg" alt="M Core logo">
-          <span>M Core</span>
-        </a>
-        <p>Remote website building from Riyadh for companies and personal brands worldwide.</p>
-      </div>
-      <div>
-        <h3>Pages</h3>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div>
-        <h3>Portfolio Focus</h3>
-        <a href="portfolio.html">Construction</a>
-        <a href="portfolio.html">Classroom LMS</a>
-        <a href="portfolio.html">Fit-Out &amp; Signage</a>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <a href="tel:0556175626">0556175626</a>
-        <a href="mailto:m.core.official.webdevelopment@gmail.com">m.core.official.webdevelopment@gmail.com</a>
-        <p>Riyadh, Saudi Arabia</p>
-      </div>
+      <div><a class="brand brand-footer" href="index.html"><img src="assets/logo-m.svg" alt="M Core logo"><span>M Core</span></a><p>Premium websites built remotely from Riyadh for serious brands worldwide.</p></div>
+      <div><h3>Pages</h3><a href="index.html">Home</a><a href="portfolio.html">Clients</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
+      <div><h3>Highlights</h3><a href="portfolio.html">Our Clients</a><a href="portfolio.html">Industries We Work For</a><a href="services.html">Process</a></div>
+      <div><h3>Contact</h3><a href="tel:0556175626">0556175626</a><a href="mailto:m.core.official.webdevelopment@gmail.com">m.core.official.webdevelopment@gmail.com</a><p>Riyadh, Saudi Arabia</p></div>
     </div>
-    <div class="container footer-bottom">
-      <p>&copy; 2026 M Core. Built for global clients.</p>
-    </div>
+    <div class="container footer-bottom"><p>&copy; 2026 M Core. All rights reserved.</p></div>
   </footer>
 </body>
 </html>
